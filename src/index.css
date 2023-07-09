@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "roboto";
+    src: url("../public/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url("../public/fonts/Roboto-Bold.ttf");
+}
+
+@layer components {
+    .input-primary {
+        @apply w-full border-0 rounded-lg py-4 px-6 sm:text-sm text-base ring-1 ring-inset ring-neutral-300 focus:ring-1 focus:ring-inset focus:ring-neutral-700 text-charcoal-gray-0 font-semibold cursor-pointer
+    }
+    .input-error {
+        @apply w-full border-0 bg-tomato-0 bg-opacity-10 placeholder:text-tomato-0 rounded-lg py-4 px-6 sm:text-sm text-base ring-1 ring-inset ring-tomato-0 focus:ring-1 focus:ring-inset focus:ring-tomato-0 text-tomato-0 font-semibold cursor-pointer
+    }
+}
